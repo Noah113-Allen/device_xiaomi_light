@@ -52,6 +52,11 @@ vendor/lib64/egl/libMEOW_trace.so
 -vendor/lib64/libpq_cust_base.so
 -vendor/lib64/libpqframework.so
 
+# IMS
+-vendor/bin/rcs_volte_stack
+-vendor/bin/volte_rcs_ua
+-vendor/lib/librcs_volte_core.so
+
 # NVRAM
 -vendor/bin/fuelgauged_nvram
 -vendor/bin/nvram_daemon
