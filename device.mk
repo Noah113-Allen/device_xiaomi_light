@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/mt6833-common/mt6833.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/light/light-vendor.mk)
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.mt6833.rc
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
