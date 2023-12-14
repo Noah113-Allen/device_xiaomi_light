@@ -10,6 +10,14 @@ $(call inherit-product, device/xiaomi/mt6833-common/mt6833.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/light/light-vendor.mk)
 
+# Properties
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/properties/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/properties/product,$(TARGET_COPY_OUT_PRODUCT)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/properties/system,$(TARGET_COPY_OUT_SYSTEM)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/properties/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/properties/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.mt6833.rc
