@@ -22,5 +22,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 # Vintf
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 
+# Vibrator
+VIBRATOR_SUPPORTS_EFFECTS := true
+
 # Inherit from mt6833-common
 include device/xiaomi/mt6833-common/BoardConfigCommon.mk
