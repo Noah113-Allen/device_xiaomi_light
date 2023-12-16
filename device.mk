@@ -12,7 +12,8 @@ $(call inherit-product, vendor/xiaomi/light/light-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayLight
+    FrameworksResOverlayLight \
+    SystemUIOverlayLight
 
 # Properties
 PRODUCT_COPY_FILES += \
