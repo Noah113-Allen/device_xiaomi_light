@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/mt6833-common/mt6833.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/light/light-vendor.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayLight
+
 # Properties
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/properties/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
