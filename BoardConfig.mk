@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/light
 
+# Asserts
+TARGET_OTA_ASSERT_DEVICE := light
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 
